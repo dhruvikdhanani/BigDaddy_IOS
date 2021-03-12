@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderFilterView" customModule="Big_Daddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-ba-33Z">
+                    <rect key="frame" x="16" y="16" width="382" height="218"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-1k-YJk">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="42.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-Fa-b2N">
+                                    <rect key="frame" x="16" y="0.0" width="104" height="42.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                    <state key="normal" title="   All Orders" image="radio">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="radio_selected">
+                                        <color key="titleColor" name="themeColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnFilterAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="SiM-lz-9RF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Smg-Fa-b2N" secondAttribute="bottom" id="KrW-hO-Zsa"/>
+                                <constraint firstItem="Smg-Fa-b2N" firstAttribute="leading" secondItem="iIf-1k-YJk" secondAttribute="leading" constant="16" id="MKY-ab-eIs"/>
+                                <constraint firstItem="Smg-Fa-b2N" firstAttribute="top" secondItem="iIf-1k-YJk" secondAttribute="top" id="Ohx-QY-nBY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7F-IX-cC0">
+                            <rect key="frame" x="0.0" y="58.5" width="382" height="42.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAc-kL-pBZ">
+                                    <rect key="frame" x="16" y="0.0" width="129" height="42.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                    <state key="normal" title="   Active Orders" image="radio">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="radio_selected">
+                                        <color key="titleColor" name="themeColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnFilterAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="cEZ-dC-wdm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="cAc-kL-pBZ" firstAttribute="leading" secondItem="p7F-IX-cC0" secondAttribute="leading" constant="16" id="5zP-VB-Rc2"/>
+                                <constraint firstItem="cAc-kL-pBZ" firstAttribute="top" secondItem="p7F-IX-cC0" secondAttribute="top" id="FPk-l4-LoY"/>
+                                <constraint firstAttribute="bottom" secondItem="cAc-kL-pBZ" secondAttribute="bottom" id="QEU-4g-PYx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NW3-4o-7Fm">
+                            <rect key="frame" x="0.0" y="117" width="382" height="42.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIx-nP-BHL">
+                                    <rect key="frame" x="16" y="0.0" width="162" height="42.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                    <state key="normal" title="   Completed Orders" image="radio">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="radio_selected">
+                                        <color key="titleColor" name="themeColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnFilterAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="j4y-ck-YqD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qIx-nP-BHL" secondAttribute="bottom" id="VHT-X2-QfB"/>
+                                <constraint firstItem="qIx-nP-BHL" firstAttribute="leading" secondItem="NW3-4o-7Fm" secondAttribute="leading" constant="16" id="mGt-s1-XOb"/>
+                                <constraint firstItem="qIx-nP-BHL" firstAttribute="top" secondItem="NW3-4o-7Fm" secondAttribute="top" id="nCt-1h-edL"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-HE-4eJ">
+                            <rect key="frame" x="0.0" y="175.5" width="382" height="42.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkI-Yh-Iet">
+                                    <rect key="frame" x="16" y="0.0" width="155" height="42.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                    <state key="normal" title="   Cancelled Orders" image="radio">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="radio_selected">
+                                        <color key="titleColor" name="themeColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnFilterAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="f4S-5h-qID"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="XkI-Yh-Iet" firstAttribute="leading" secondItem="oeo-HE-4eJ" secondAttribute="leading" constant="16" id="Fnj-MG-70R"/>
+                                <constraint firstAttribute="bottom" secondItem="XkI-Yh-Iet" secondAttribute="bottom" id="Ily-T6-rnx"/>
+                                <constraint firstItem="XkI-Yh-Iet" firstAttribute="top" secondItem="oeo-HE-4eJ" secondAttribute="top" id="rTl-g7-XRs"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mha-ba-33Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="4zq-65-qXi"/>
+                <constraint firstItem="Mha-ba-33Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="FvR-1C-Leq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mha-ba-33Z" secondAttribute="trailing" constant="16" id="YBW-yB-Nue"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Mha-ba-33Z" secondAttribute="bottom" constant="16" id="qSk-QS-mvN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnActiveOrders" destination="cAc-kL-pBZ" id="5oc-Ls-c8z"/>
+                <outlet property="btnAllOrders" destination="Smg-Fa-b2N" id="lq3-Wv-hNI"/>
+                <outlet property="btnCancelledOrders" destination="XkI-Yh-Iet" id="0Jk-e4-hmF"/>
+                <outlet property="btnCompletedOrders" destination="qIx-nP-BHL" id="rjw-aj-QXw"/>
+            </connections>
+            <point key="canvasLocation" x="-146" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="radio" width="25" height="25"/>
+        <image name="radio_selected" width="25" height="25"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.96862745098039216" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeColor">
+            <color red="1" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderListCell" customModule="Big_Daddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sby-sC-kgF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-IK-eMC">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="75"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okP-rZ-JOz">
+                                <rect key="frame" x="80" y="0.0" width="80" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varachha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-bx-8L4">
+                                        <rect key="frame" x="0.0" y="4" width="80" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="updown" translatesAutoresizingMaskIntoConstraints="NO" id="VAI-Sh-zgH">
+                                        <rect key="frame" x="35" y="32.5" width="10" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VAI-Sh-zgH" secondAttribute="height" multiplier="1:1" id="AhV-nI-AnM"/>
+                                            <constraint firstAttribute="height" constant="10" id="mkJ-dd-WKM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ring Road" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooi-QZ-q5M">
+                                        <rect key="frame" x="0.0" y="46.5" width="80" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VAI-Sh-zgH" firstAttribute="centerY" secondItem="okP-rZ-JOz" secondAttribute="centerY" id="9sA-Uy-TXf"/>
+                                    <constraint firstItem="cgz-bx-8L4" firstAttribute="top" secondItem="okP-rZ-JOz" secondAttribute="top" constant="4" id="L4g-Jq-00Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="cgz-bx-8L4" secondAttribute="trailing" id="QnG-YQ-kbo"/>
+                                    <constraint firstItem="ooi-QZ-q5M" firstAttribute="centerX" secondItem="okP-rZ-JOz" secondAttribute="centerX" id="QzM-Zn-qzQ"/>
+                                    <constraint firstItem="VAI-Sh-zgH" firstAttribute="centerX" secondItem="okP-rZ-JOz" secondAttribute="centerX" id="Uvf-RL-OFo"/>
+                                    <constraint firstItem="ooi-QZ-q5M" firstAttribute="leading" secondItem="okP-rZ-JOz" secondAttribute="leading" id="WX5-Rl-yJT"/>
+                                    <constraint firstItem="cgz-bx-8L4" firstAttribute="centerX" secondItem="okP-rZ-JOz" secondAttribute="centerX" id="Yv5-Hr-MTh"/>
+                                    <constraint firstItem="VAI-Sh-zgH" firstAttribute="top" secondItem="cgz-bx-8L4" secondAttribute="bottom" constant="4" id="bzS-BY-WjM"/>
+                                    <constraint firstAttribute="bottom" secondItem="ooi-QZ-q5M" secondAttribute="bottom" constant="4" id="f12-Mr-kwr"/>
+                                    <constraint firstItem="ooi-QZ-q5M" firstAttribute="top" secondItem="VAI-Sh-zgH" secondAttribute="bottom" constant="4" id="iqX-qw-UEo"/>
+                                    <constraint firstAttribute="trailing" secondItem="ooi-QZ-q5M" secondAttribute="trailing" id="kKR-BN-Jbb"/>
+                                    <constraint firstItem="cgz-bx-8L4" firstAttribute="leading" secondItem="okP-rZ-JOz" secondAttribute="leading" id="qIl-i7-R1e"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME3-PH-wGv">
+                                <rect key="frame" x="160" y="0.0" width="80" height="75"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlz-Ay-b5c">
+                                <rect key="frame" x="240" y="0.0" width="80" height="75"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Sby-sC-kgF" secondAttribute="bottom" id="AIW-D6-B21"/>
+                    <constraint firstItem="Sby-sC-kgF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bRF-24-QyB"/>
+                    <constraint firstAttribute="trailing" secondItem="Sby-sC-kgF" secondAttribute="trailing" id="f9W-Mq-exY"/>
+                    <constraint firstItem="Sby-sC-kgF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hO1-dq-cSJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="141" y="126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="updown" width="25" height="25"/>
+    </resources>
+</document>

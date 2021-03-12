@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FileCell" customModule="Big_Daddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QjJ-I2-R6l">
+                        <rect key="frame" x="16" y="9.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QjJ-I2-R6l" secondAttribute="height" multiplier="1:1" id="HzD-Jz-heH"/>
+                            <constraint firstAttribute="height" constant="25" id="I3C-c1-J1q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LR123.xls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zws-5n-oNu">
+                        <rect key="frame" x="57" y="12.5" width="217" height="19"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jE-03-cUD">
+                        <rect key="frame" x="282" y="7" width="30" height="30"/>
+                        <color key="backgroundColor" name="themeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="QLg-DV-uJA"/>
+                            <constraint firstAttribute="width" secondItem="8jE-03-cUD" secondAttribute="height" multiplier="1:1" id="hBg-sQ-LUD"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="multiply" catalog="system"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" name="lightColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8jE-03-cUD" secondAttribute="trailing" constant="8" id="4N2-MM-9li"/>
+                    <constraint firstItem="QjJ-I2-R6l" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Da0-vu-x7t"/>
+                    <constraint firstItem="QjJ-I2-R6l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Eri-nL-xr7"/>
+                    <constraint firstItem="Zws-5n-oNu" firstAttribute="leading" secondItem="QjJ-I2-R6l" secondAttribute="trailing" constant="16" id="H4g-vP-bsG"/>
+                    <constraint firstItem="8jE-03-cUD" firstAttribute="leading" secondItem="Zws-5n-oNu" secondAttribute="trailing" constant="8" id="LzU-ru-fjy"/>
+                    <constraint firstItem="8jE-03-cUD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="R8q-tE-LHi"/>
+                    <constraint firstItem="Zws-5n-oNu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yeq-MO-BfZ"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="8"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnClose" destination="8jE-03-cUD" id="49n-gC-IDY"/>
+                <outlet property="fileTypeImageView" destination="QjJ-I2-R6l" id="kHK-VK-z87"/>
+                <outlet property="lblFileName" destination="Zws-5n-oNu" id="oyk-xB-2zw"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <namedColor name="lightColor">
+            <color red="0.99607843137254903" green="0.97254901960784312" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeColor">
+            <color red="1" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

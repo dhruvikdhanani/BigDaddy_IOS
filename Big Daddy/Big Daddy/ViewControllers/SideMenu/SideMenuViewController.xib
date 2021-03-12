@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuViewController" customModule="Big_Daddy" customModuleProvider="target">
+            <connections>
+                <outlet property="secondView" destination="fuE-Oa-M16" id="GIe-dK-WvQ"/>
+                <outlet property="sideMenuTableView" destination="J1F-E9-kDN" id="VrI-DU-cDL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-eF-q96">
+                    <rect key="frame" x="52" y="44" width="144.5" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Khh-eF-q96" secondAttribute="height" multiplier="1:1" id="jHQ-b4-fhR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Wick" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnP-9A-0Oa">
+                    <rect key="frame" x="0.0" y="189" width="248.5" height="24.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J1F-E9-kDN">
+                    <rect key="frame" x="0.0" y="221.5" width="248.5" height="640.5"/>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bCZ-wB-VTV"/>
+                        <outlet property="delegate" destination="-1" id="atW-7h-RQq"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuE-Oa-M16">
+                    <rect key="frame" x="277.5" y="179" width="136.5" height="538"/>
+                    <color key="backgroundColor" name="themeLightColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="cnP-9A-0Oa" secondAttribute="bottom" constant="-169.5" id="7SV-GB-Yde"/>
+                <constraint firstItem="fuE-Oa-M16" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.33" id="GIh-sM-5bd"/>
+                <constraint firstItem="cnP-9A-0Oa" firstAttribute="leading" secondItem="J1F-E9-kDN" secondAttribute="leading" id="H0P-bN-Xsw"/>
+                <constraint firstItem="fuE-Oa-M16" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MBA-Xz-ZwJ"/>
+                <constraint firstItem="cnP-9A-0Oa" firstAttribute="top" secondItem="Khh-eF-q96" secondAttribute="bottom" id="Ndy-99-TBs"/>
+                <constraint firstItem="Khh-eF-q96" firstAttribute="centerX" secondItem="J1F-E9-kDN" secondAttribute="centerX" id="QB0-Vm-IW2"/>
+                <constraint firstAttribute="trailing" secondItem="fuE-Oa-M16" secondAttribute="trailing" id="VxE-Br-fu5"/>
+                <constraint firstItem="J1F-E9-kDN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WH2-mw-JqF"/>
+                <constraint firstItem="J1F-E9-kDN" firstAttribute="top" secondItem="cnP-9A-0Oa" secondAttribute="bottom" constant="8" id="YyR-He-JK7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J1F-E9-kDN" secondAttribute="bottom" id="aUf-Oo-Uxz"/>
+                <constraint firstItem="J1F-E9-kDN" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="g9u-PB-Dxw"/>
+                <constraint firstItem="fuE-Oa-M16" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="mhx-qm-e1E"/>
+                <constraint firstItem="cnP-9A-0Oa" firstAttribute="centerX" secondItem="Khh-eF-q96" secondAttribute="centerX" id="xYr-5d-yVQ"/>
+                <constraint firstItem="Khh-eF-q96" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.35" id="yfg-IG-ZGI"/>
+                <constraint firstItem="Khh-eF-q96" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zDX-dF-6Zd"/>
+            </constraints>
+            <point key="canvasLocation" x="-13.043478260869566" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="500" height="500"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.96862745098039216" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeLightColor">
+            <color red="1" green="0.72941176470588232" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
