@@ -43,7 +43,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func btnResendAction(_ sender: UIButton) {
-        if txtMobileNumber.isEmpty() {
+        /* if txtMobileNumber.isEmpty() {
             showAlertWithTitle(message: "Please Enter Mobile Number", type: .WARNING)
             return
         }
@@ -51,20 +51,22 @@ class SignUpViewController: UIViewController {
             showAlertWithTitle(message: "Please Enter Valid Mobile Number", type: .WARNING)
             return
         }
-        sendOTP()
+        sendOTP()*/
     }
     
     func sendOTP() {
-        var param = typeAliasDictionary()
+        /*var param = typeAliasDictionary()
         param["mobile"] = txtMobileNumber.getText().trim()
         param["for_what"] = "R"
         callRestApi("customer/send-otp-for-signup-mobile", methodType: .POST, parameters: param, contentType: .RAW) { [weak self] (dict) in
             self?.dict = dict.valuForKeyDic("data")
-        }
+        } */
     }
     
     func verifyOTP() {
-        let otp = (txtFirst.getText().trim() + txtSecond.getText().trim() + txtThird.getText().trim() + txtFourth.getText().trim())
+      let personalDetail = PersonalDetailViewController.init(nibName: "PersonalDetailViewController", bundle: nil)
+      self.navigationController?.pushViewController(personalDetail, animated: true)
+       /* let otp = (txtFirst.getText().trim() + txtSecond.getText().trim() + txtThird.getText().trim() + txtFourth.getText().trim())
         if otp.count < 4 {
             showAlertWithTitle(message: "Please Enter OTP", type: .WARNING)
             return
@@ -80,7 +82,7 @@ class SignUpViewController: UIViewController {
                 let personalDetail = PersonalDetailViewController.init(nibName: "PersonalDetailViewController", bundle: nil)
                 self?.navigationController?.pushViewController(personalDetail, animated: true)
             }
-        }
+        } */
     }
     
 }

@@ -1764,14 +1764,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Big Daddy/Big Daddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FY3SP2C62C;
+				DEVELOPMENT_TEAM = 4L2B8KQ8HQ;
 				INFOPLIST_FILE = "Big Daddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dhruv.Big-Daddy";
+				PRODUCT_BUNDLE_IDENTIFIER = "dhruv.Big-Daddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Big Daddy/Extension/BidDaddy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1786,14 +1786,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Big Daddy/Big Daddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FY3SP2C62C;
+				DEVELOPMENT_TEAM = 4L2B8KQ8HQ;
 				INFOPLIST_FILE = "Big Daddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dhruv.Big-Daddy";
+				PRODUCT_BUNDLE_IDENTIFIER = "dhruv.Big-Daddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Big Daddy/Extension/BidDaddy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

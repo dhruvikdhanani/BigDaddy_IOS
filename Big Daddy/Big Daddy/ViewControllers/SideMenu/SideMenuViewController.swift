@@ -44,7 +44,7 @@ class SideMenuViewController: UIViewController {
         selectedIndex = index
         switch index {
         case 0:
-            let contentViewController = AppNavigationViewController(rootViewController: DashboardViewController())
+            let contentViewController = AppNavigationViewController(rootViewController: OrderListViewController())
             sideMenuViewController?.setContentViewController(contentViewController, animated: true)
         case 1:
             let contentViewController = AppNavigationViewController(rootViewController: NewOrderViewController())

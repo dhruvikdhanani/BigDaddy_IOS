@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func buildController() -> UIViewController {
 
-        let navigationController = AppNavigationViewController(rootViewController: DashboardViewController())
+        let navigationController = AppNavigationViewController(rootViewController: OrderListViewController())
 
         sideMenuViewController = AKSideMenu(contentViewController: navigationController,
                                                 leftMenuViewController: SideMenuViewController(),

@@ -68,11 +68,12 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func btnSignInAction(_ sender: UIButton) {
-        if loginSegmentControl.selectedSegmentIndex == 0 {
-            verifyLoginWithOTP()
-        } else {
-            callLoginWithEmail()
-        }
+      appDelegate().showDash()
+//        if loginSegmentControl.selectedSegmentIndex == 0 {
+//            verifyLoginWithOTP()
+//        } else {
+//            callLoginWithEmail()
+//        }
     }
     
     @IBAction func btnResendAction(_ sender: UIButton) {
@@ -186,7 +187,7 @@ extension SignInViewController: UITextFieldDelegate {
         if textField == txtMobileNumber {
             if txtMobileNumber.getText().validateMobileNo() {
                 txtMobileNumber.resignFirstResponder()
-                callLoginWithOTP()
+//                callLoginWithOTP()
             } else if txtMobileNumber.getText().count >= 10 {
                 showAlertWithTitle(message: "Please Enter Valid Mobile Number", type: .WARNING)
             }

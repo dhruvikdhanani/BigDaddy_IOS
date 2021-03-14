@@ -136,7 +136,8 @@ class PersonalDetailViewController: UIViewController {
     }
     
     @IBAction func btnSubmitAction(_ sender: UIButton) {
-        signup()
+//        signup()
+      appDelegate().showDash()
     }
     
 }
