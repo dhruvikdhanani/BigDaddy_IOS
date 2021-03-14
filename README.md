@@ -1,5 +1,5 @@
 # BigDaddy_IOS
-![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/BPPW1872.gif)
+![](BigDaddyImages/BPPW1872.gif)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3082.png)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3083.png)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3084.png)
