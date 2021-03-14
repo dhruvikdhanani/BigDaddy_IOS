@@ -1,4 +1,5 @@
 # BigDaddy_IOS
+![](BigDaddyImages/BPPW1872.gif)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3082.png)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3083.png)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3084.png)
@@ -12,4 +13,3 @@
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3092.png)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3093.png)
 ![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/IMG_3097.png)
-![alt text](https://github.com/dhruvikdhanani/BigDaddy_IOS/blob/master/BigDaddyImages/BPPW1872.mp4)
