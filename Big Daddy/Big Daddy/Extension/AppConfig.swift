@@ -1,8 +1,8 @@
 //
 //  AppConfig.swift
-//  Pickvery
+//  Big Dady
 //
-//  Created by DREAMS on 29/09/20.
+//  Created by Dhruvik Dhanani on 10/03/21.
 //
 
 import Foundation
